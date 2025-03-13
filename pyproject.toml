@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "sparse_probing_paper"
 version = "0.1.0"
 description = "Sparse Probing Paper Repository"
-dependencies = [ "gurobipy >= 10", "transformer-lens", "torch", "torchtext", "numpy", "pandas", "tqdm", "matplotlib", "scikit-learn", "scipy", "plotly", "ipython", "jupyter", "pylint", "autopep8", "seaborn", "notebook", "conllu", "circuitsvis", "zstandard", "spacy", "spacy-alignments", "sparqlwrapper", "google-re2", "numba",]
+dependencies = [ "gurobipy >= 10", "transformer-lens", "torch", "torchtext", "numpy", "pandas", "tqdm", "matplotlib", "scikit-learn", "scipy", "plotly", "ipython", "jupyter", "pylint", "autopep8", "seaborn", "notebook", "conllu", "circuitsvis", "zstandard", "spacy", "spacy-alignments", "sparqlwrapper", "google-re2", "numba", "mky-utils", "pre-commit",]
 [[project.authors]]
 name = "Your Name"
 email = "your.email@example.com"
