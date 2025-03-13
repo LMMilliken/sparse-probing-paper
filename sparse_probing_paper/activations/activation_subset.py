@@ -8,7 +8,7 @@ from transformer_lens import HookedTransformer
 from functools import partial
 from concurrent.futures import ProcessPoolExecutor
 
-from activations.common import (get_hook_name, load_json, load_tensor,
+from sparse_probing_paper.activations.common import (get_hook_name, load_json, load_tensor,
                                 save_json, save_tensor)
 
 

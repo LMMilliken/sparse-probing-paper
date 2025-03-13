@@ -4,20 +4,20 @@ import argparse
 from datasets import Dataset
 import pandas as pd
 
-from probing_datasets import token_supervised
-from probing_datasets import language_id
-from probing_datasets import counterfact
-from probing_datasets import distribution_id
-from probing_datasets import ngrams
-from probing_datasets import pile_test
-from probing_datasets import neuron_stimulus
-from probing_datasets import ewt
-from probing_datasets import wikidata
-from probing_datasets import position
-from probing_datasets import latex
+from sparse_probing_paper.probing_datasets import token_supervised
+from sparse_probing_paper.probing_datasets import language_id
+from sparse_probing_paper.probing_datasets import counterfact
+from sparse_probing_paper.probing_datasets import distribution_id
+from sparse_probing_paper.probing_datasets import ngrams
+from sparse_probing_paper.probing_datasets import pile_test
+from sparse_probing_paper.probing_datasets import neuron_stimulus
+from sparse_probing_paper.probing_datasets import ewt
+from sparse_probing_paper.probing_datasets import wikidata
+from sparse_probing_paper.probing_datasets import position
+from sparse_probing_paper.probing_datasets import latex
 
-from config import *
-from load import *
+from sparse_probing_paper.config import *
+from sparse_probing_paper.load import *
 
 
 GITHUB_DATASET_PATH = os.path.join(

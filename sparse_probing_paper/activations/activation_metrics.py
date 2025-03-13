@@ -9,7 +9,7 @@ from functools import partial
 from functorch import vmap
 from transformer_lens import HookedTransformer
 
-from activations.common import (
+from sparse_probing_paper.activations.common import (
     get_hook_name, load_json, load_tensor,
     save_json, save_tensor)
 

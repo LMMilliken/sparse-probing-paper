@@ -3,7 +3,7 @@ import torch
 import pickle
 import datasets
 from transformer_lens import HookedTransformer, utils
-from config import FeatureDatasetConfig
+from sparse_probing_paper.config import FeatureDatasetConfig
 
 
 def load_model(model_name="gpt2-small", device=None):

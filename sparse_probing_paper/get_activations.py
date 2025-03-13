@@ -1,23 +1,23 @@
 import os
 import time
 import torch
-from config import *
-from utils import *
-from load import load_model, load_feature_dataset
-from activations.activation_probing_dataset import get_activation_dataset, make_index_mask
-from activations.activation_all import (
+from sparse_probing_paper.config import *
+from sparse_probing_paper.utils import *
+from sparse_probing_paper.load import load_model, load_feature_dataset
+from sparse_probing_paper.activations.activation_probing_dataset import get_activation_dataset, make_index_mask
+from sparse_probing_paper.activations.activation_all import (
     get_full_activation_tensor, save_full_activation_tensor)
-from activations.activation_subset import (
+from sparse_probing_paper.activations.activation_subset import (
     parse_neuron_str, get_activation_subset,
     save_activation_subset, load_neuron_subset_csv,
     compute_token_summary_dfs)
-from activations.activation_metrics import (
+from sparse_probing_paper.activations.activation_metrics import (
     get_activation_metrics, save_activation_metrics)
-from activations.common import (
+from sparse_probing_paper.activations.common import (
     get_experiment_dir, get_experiment_metadata, get_experiment_info_str)
-from activations.test import (
+from sparse_probing_paper.activations.test import (
     test_get_activation_subset, test_get_activation_metrics)
-from make_feature_datasets import prepare_feature_dataset
+from sparse_probing_paper.make_feature_datasets import prepare_feature_dataset
 
 
 def make_activation_probe_dataset(args, model):

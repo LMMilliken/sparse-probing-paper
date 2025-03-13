@@ -13,9 +13,9 @@ from transformers import AutoTokenizer
 
 if __name__ == '__main__':
     sys.path.append(os.getenv('SPARSE_PROBING_ROOT'))
-from probing_datasets.common import FeatureDataset
-from config import FeatureDatasetConfig, ExperimentConfig
-from load import load_raw_dataset
+from sparse_probing_paper.probing_datasets.common import FeatureDataset
+from sparse_probing_paper.config import FeatureDatasetConfig, ExperimentConfig
+from sparse_probing_paper.load import load_raw_dataset
 
 try:
     import re2 as re
@@ -330,7 +330,7 @@ class WikidataFeatureDataset(FeatureDataset):
     ) -> Dataset:
         '''
         Arguments:
-            args: command line arguments from make_feature_datasets
+            args: command line arguments from sparse_probing_paper.make_feature_datasets
             table: wikidata entries
             text_dataset: dataset of raw strings (same as was used to create the table)
 

@@ -2,7 +2,7 @@ import argparse
 import os
 import torch
 import numpy as np
-from load import load_model
+from sparse_probing_paper.load import load_model
 
 
 def compute_and_save_weight_statistics(args):

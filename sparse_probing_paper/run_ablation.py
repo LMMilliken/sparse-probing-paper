@@ -1,4 +1,4 @@
-from load import *
+from sparse_probing_paper.load import *
 import argparse
 import datetime
 import os
@@ -8,7 +8,7 @@ from torch.utils.data import DataLoader
 from tqdm import tqdm
 from functools import partial
 
-from activations.activation_subset import load_neuron_subset_csv
+from sparse_probing_paper.activations.activation_subset import load_neuron_subset_csv
 
 
 @torch.no_grad()

@@ -10,16 +10,16 @@ import torch
 import numpy as np
 from sklearn.metrics import *
 
-from load import *
-from config import *
-from utils import timestamp, seed_all, default_argument_parser, MODEL_N_LAYERS
-from make_feature_datasets import prepare_feature_dataset
-from activations.activation_probing_dataset import make_index_mask, load_activation_probing_dataset
+from sparse_probing_paper.load import *
+from sparse_probing_paper.config import *
+from sparse_probing_paper.utils import timestamp, seed_all, default_argument_parser, MODEL_N_LAYERS
+from sparse_probing_paper.make_feature_datasets import prepare_feature_dataset
+from sparse_probing_paper.activations.activation_probing_dataset import make_index_mask, load_activation_probing_dataset
 
-from experiments.activations import *
-from experiments.probes import *
-from experiments.metrics import *
-from experiments.inner_loops import *
+from sparse_probing_paper.experiments.activations import *
+from sparse_probing_paper.experiments.probes import *
+from sparse_probing_paper.experiments.metrics import *
+from sparse_probing_paper.experiments.inner_loops import *
 
 
 def save_result(exp_cfg, result, inner_loop_name, feature_name):

@@ -1,10 +1,10 @@
 import numpy as np
 import torch
 
-from activations.activation_all import get_full_activation_tensor
-from activations.activation_metrics import get_activation_metrics
-from activations.activation_subset import get_activation_subset
-from activations.common import time_function
+from sparse_probing_paper.activations.activation_all import get_full_activation_tensor
+from sparse_probing_paper.activations.activation_metrics import get_activation_metrics
+from sparse_probing_paper.activations.activation_subset import get_activation_subset
+from sparse_probing_paper.activations.common import time_function
 
 
 def test_get_activation_metrics(

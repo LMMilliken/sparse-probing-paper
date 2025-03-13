@@ -5,8 +5,8 @@ import numpy as np
 from datasets.arrow_dataset import Dataset
 from transformers import AutoTokenizer
 
-from probing_datasets.common import FeatureDataset
-from config import FeatureDatasetConfig
+from sparse_probing_paper.probing_datasets.common import FeatureDataset
+from sparse_probing_paper.config import FeatureDatasetConfig
 
 
 class CounterfactFeatureDataset(FeatureDataset):
@@ -34,7 +34,7 @@ class CounterfactFeatureDataset(FeatureDataset):
     def make(
         self,
         dataset_config: FeatureDatasetConfig,
-        args: dict,  # command line arguments from make_feature_datasets
+        args: dict,  # command line arguments from sparse_probing_paper.make_feature_datasets
         raw_dataset: Dataset,
         tokenizer: AutoTokenizer,
         cache=True,
