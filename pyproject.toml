@@ -13,6 +13,3 @@ email = "your.email@example.com"
 
 [tool.setuptools]
 packages = [ "sparse_probing_paper",]
-
-[tool.setuptools.find]
-where = [ "sparse_probing_paper",]
