@@ -11,5 +11,3 @@ dependencies = [ "gurobipy >= 10", "transformer-lens", "torch", "torchtext", "nu
 name = "Your Name"
 email = "your.email@example.com"
 
-[tool.setuptools]
-packages = [ "sparse_probing_paper",]
