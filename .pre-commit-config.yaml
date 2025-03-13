@@ -3,6 +3,6 @@ repos:
     hooks:
       - id: Update dependencies
         name: Update dependencies
-        entry: python -m mky_utils.update_dependencies.py
+        entry: python -m mky_utils.update_dependencies
         language: system
         files: ^(requirements.txt|pyproject.toml)$
