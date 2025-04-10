@@ -22,7 +22,7 @@ from sparse_probing_paper.experiments.metrics import *
 from sparse_probing_paper.experiments.inner_loops import *
 
 
-def save_result(exp_cfg, result, inner_loop_name, feature_name):
+def save_result(exp_cfg, result, inner_loop_name, feature_name, layer):
     save_path = os.path.join(
         os.getenv('RESULTS_DIR', 'results'),
         exp_cfg.experiment_name,
@@ -91,7 +91,7 @@ def run_probe_on_layer(exp_cfg, tokenized_dataset, feature_datasets, layer):
         # prepare the feature specific dataset
         if feature_name in skip_features:
             continue
-        if feature_data == None:
+        if feature_data is None:
             print(f'Warning no feature data for {feature_name}')
             continue
 
@@ -124,7 +124,7 @@ def run_probe_on_layer(exp_cfg, tokenized_dataset, feature_datasets, layer):
             if exp_cfg.save_features_together:
                 results[inner_loop_name][feature_name] = result
             else:
-                save_result(exp_cfg, result, inner_loop_name, feature_name)
+                save_result(exp_cfg, result, inner_loop_name, feature_name, layer)
 
     if exp_cfg.save_features_together:
         for inner_loop_name in exp_cfg.experiment_type:

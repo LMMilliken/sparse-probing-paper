@@ -8,6 +8,8 @@ import matplotlib.pyplot as plt
 import random
 import math
 
+import torch
+
 
 def generate_gradient_cut(X, y, s, reg, weights):
     indices = s > 0.5

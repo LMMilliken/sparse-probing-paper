@@ -150,7 +150,10 @@ def optimal_sparse_probing(exp_cfg, activation_dataset, feature_labels, regulari
     """
     X_train, X_test, y_train, y_test = split_and_preprocess(
         exp_cfg, activation_dataset, feature_labels)
-
+    print(X_test.dtype)
+    print(X_train.dtype)
+    print(y_test.dtype)
+    print(y_train.dtype)
     n, d_act = X_train.shape
 
     if regularization is None:

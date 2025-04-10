@@ -17,6 +17,7 @@ def get_activation_dataset_path(exp_cfg):
     feature_dataset = exp_cfg.feature_dataset \
         if not exp_cfg.probe_next_token_feature \
         else f'{exp_cfg.feature_dataset}.next_token'
+
     save_path = os.path.join(
         os.environ.get('RESULTS_DIR', 'results'),
         'activation_datasets',
